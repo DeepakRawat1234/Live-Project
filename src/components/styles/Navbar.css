@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+.Navbar{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 0px 60px;
+    display: flex;
+}
+
+.Logo-text{
+    font-weight: 600;
+    width: 55%;
+    padding: 15px 20px;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.Nav-link{
+    display: flex;
+    list-style: none;
+    width: 35%;
+    text-align: center;
+}
+
+.link-item{
+    padding: 15px 40px;
+    width: 50%;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+.Logo-text:hover,.link-item:hover{
+  color: blue;
+}
+
+.startbtn{
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.804);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.startbtn:hover{
+    background-color: rgb(4, 4, 82);
+}
+
+/* -------------------------------------------------- */
+/* 📱 MAKE RESPONSIVE — WITHOUT CHANGING YOUR DESIGN */
+/* -------------------------------------------------- */
+
+@media (max-width: 992px){
+    .Navbar{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .Navbar{
+        flex-direction: column;
+        padding: 0px 20px;
+        align-items: center;
+    }
+
+    .Logo-text{
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .Nav-link{
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    .link-item{
+        width: 100%;
+        border-right: none;
+    }
+
+    .startbtn{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    /* No visual changes — only resizing to fit small screens */
+    .Navbar{
+        padding: 0px 10px;
+    }
+
+    .Logo-text,
+    .link-item,
+    .startbtn{
+        font-size: 14px;
+    }
+}
+    /* Menu Image Icon */
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+/* Mobile Menu */
+.Mobile-menu {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: none;   /* FIXED */
+}
+
+
+/* Mobile Logo */
+.mobile-Logo-text {
+  padding: 15px 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
+/* Mobile Links */
+.mobile-Nav-link {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-link-item {
+  padding: 35px 0;
+  border-bottom: 1px solid black;
+}
+
+.mobile-startbtn {
+  padding: 20px 0px;
+  width: 30%;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+
+  border: none !important;          /* removes all borders */
+  border-bottom: none !important;   /* specifically remove bottom border */
+}
+
+/* Show hamburger + mobile styles on small screens */
+@media (max-width: 768px) {
+  .Navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Desktop only */
+@media (min-width: 769px) {
+  .Mobile-menu {
+    display: none;
+  }
+}
