@@ -1,0 +1,143 @@
+.parent-box {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(
+                rgba(0,0,0,0.7),
+                rgba(0,0,0,0.6)
+              ),
+              url("../../assets/sliderimg-4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    color: white;
+}
+
+/* -------- FORM BOX -------- */
+.form-box{
+    background-color: white;
+    padding: 25px 20px;   /* smaller height */
+    border-radius: 30px;
+    width: 30%;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.4);
+}
+
+.login-text{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 25px;  /* reduced */
+    font-family: "Poppins", sans-serif;
+    font-weight:400;
+}
+
+form{
+    color: rgb(117, 116, 116);
+}
+
+label{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input{
+    margin-top: 10px;
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;   /* reduced */
+}
+
+.login-btn{
+    width: 100%;
+    background-color: gray;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;     /* reduced */
+    cursor: pointer;
+}
+
+/* Remember me box */
+.remember-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.remember{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.remember-box a{
+    margin-left: 120px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.remember-box input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Signup bottom text */
+.sign-text{
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.sign-text a{
+    margin-left: 10px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .form-box {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .form-box {
+        width: 80%;
+        padding: 20px;
+    }
+    .login-text {
+        font-size: 26px;
+    }
+    input {
+        padding: 8px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+    .form-box {
+        width: 90%;
+        padding: 15px;
+    }
+    .login-text {
+        font-size: 22px;
+    }
+}

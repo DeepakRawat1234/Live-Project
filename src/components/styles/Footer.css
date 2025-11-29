@@ -1,0 +1,68 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: rgb(4, 2, 44);
+    text-align: center;
+    color: white;
+}
+
+.footer h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(216, 211, 211);
+}
+
+.footer h5 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.footer h5 i {
+    padding: 5px;
+}
+
+/* ----------------------------- */
+/*        RESPONSIVE PART        */
+/* ----------------------------- */
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    .footer {
+        padding-top: 70px;
+    }
+    .footer h5 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile large (max-width: 600px) */
+@media (max-width: 600px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .footer h6 {
+        font-size: 13px;
+    }
+    .footer h5 {
+        font-size: 17px;
+    }
+    .footer h5 i {
+        padding: 4px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile small (max-width: 400px) */
+@media (max-width: 400px) {
+    .footer h6 {
+        font-size: 12px;
+    }
+    .footer h5 {
+        font-size: 16px;
+    }
+    .footer h5 i {
+        padding: 3px;
+        font-size: 16px;
+    }
+}

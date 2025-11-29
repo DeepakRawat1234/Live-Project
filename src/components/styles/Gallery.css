@@ -1,0 +1,342 @@
+/* ---------------- HERO SECTION ---------------- */
+.Hero {
+    padding-top: 80px;
+}
+
+.Hero h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-box {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 450px;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+        url("../../assets/galler-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 1, 0.5);
+}
+
+.hero-text {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    max-width: 80%;
+}
+
+/* Large Screens */
+@media (min-width: 1440px) {
+    .Hero h1 { font-size: 60px; }
+    .hero-text { font-size: 48px; max-width: 70%; }
+    .bg-box { height: 500px; }
+}
+
+/* Laptops */
+@media (max-width: 1200px) {
+    .Hero h1 { font-size: 45px; }
+    .hero-text { font-size: 36px; }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .bg-box { height: 380px; }
+    .Hero h1 { font-size: 40px; }
+    .hero-text { font-size: 30px; max-width: 85%; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .Hero h1 {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    .bg-box {
+        height: 320px;
+        padding: 10px;
+    }
+    .hero-text {
+        font-size: 22px;
+        max-width: 90%;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+    .Hero h1 { font-size: 24px; margin-left: 8px; }
+    .hero-text { font-size: 18px; line-height: 1.3; }
+    .bg-box { height: 280px; }
+}
+
+
+/* ---------------- POST TEXT ---------------- */
+.post-text {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-text h6 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.post-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Post Grid */
+.post-box {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 35px;
+}
+
+.post-box .post-card {
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.post-box .post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-box .post-card img {
+    width: 100%;
+    height: auto;
+}
+
+.post-box .post-card p {
+    padding: 18px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .post-text h1 { font-size: 36px; }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .post-box {
+        grid-template-columns: 1fr;
+    }
+    .post-text h1 { font-size: 30px; }
+    .post-text h6 { font-size: 18px; }
+    .post-box .post-card p { font-size: 18px; }
+}
+
+
+/* ---------------- SLIDER ---------------- */
+.slider-box {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+.slider-box h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.slider-box h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.imgdiv {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-imgdiv {
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+
+.slide {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Slider Mobile */
+@media (max-width: 768px) {
+    .slider-box h1 { font-size: 28px; }
+    .prev, .next {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* ---------------- HIMALYA BOX ---------------- */
+.himalya-box {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.8)
+              ),
+              url("../../assets/post-2.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.himalya-box .hero-text {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.himalya-box h1 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 80%;
+    line-height: 1.3;
+}
+
+/* Himalya Responsive */
+@media (max-width: 768px) {
+    .himalya-box { height: 280px; }
+    .himalya-box .hero-text { font-size: 18px; }
+    .himalya-box h1 { font-size: 32px; }
+}
+
+@media (max-width: 480px) {
+    .himalya-box { height: 250px; }
+    .himalya-box .hero-text { font-size: 16px; }
+    .himalya-box h1 { font-size: 26px; }
+}
+
+
+/* ---------------- REGISTER BUTTON ---------------- */
+.registerbtn {
+    background-color: #f1f4f1;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 15px 28px;
+    border-radius: 70px;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.registerbtn:hover {
+    background-color: rgb(50, 3, 95);
+    color: white;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .registerbtn {
+        padding: 14px 26px;
+        font-size: 18px;
+        border-radius: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .registerbtn {
+        padding: 12px 22px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+    .registerbtn {
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 45px;
+    }
+}
