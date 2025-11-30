@@ -8,11 +8,9 @@ import Footer from '../components/Layout/Footer'
 const Gallery = () => {
   return (
     <div >
-        <Navbar/>
         <GalleryHero/>
         <Gallerypost/>
         <GallerySlider/>
-        <Footer/>
     </div>
   )
 }

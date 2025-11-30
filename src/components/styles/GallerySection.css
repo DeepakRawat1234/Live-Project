@@ -1,0 +1,140 @@
+.main {
+  text-align: center;
+  padding: 40px 0;
+  padding-top: 100px;
+}
+
+.gallery-link {
+  display: inline-block;
+  margin: 10px 0 20px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  background: #ff5a3c;
+  padding: 8px 18px;
+  color: white;
+  border-radius: 6px;
+  font-size: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #ff5a3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #e64d2f;
+}
+
+.about p {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px; 
+}
+
+.about-title {
+  text-align: center;
+  font-size: 60px;
+  margin-left: 5px;
+  margin-top: 25px;
+}
+
+/* ============================
+   RESPONSIVE BREAKPOINTS
+=============================== */
+
+/* Large Tablets (3 columns) */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-link {
+    font-size: 32px;
+  }
+  .about-title {
+    font-size: 48px;
+  }
+}
+
+/* Tablets (2 columns) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h3 {
+    font-size: 26px;
+  }
+  .about p {
+    font-size: 22px;
+  }
+  .gallery-link {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+  .about-title {
+    font-size: 42px;
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    height: 180px;
+  }
+  .gallery-link {
+    font-size: 26px;
+  }
+  .about-title {
+    font-size: 32px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+}
