@@ -1,0 +1,123 @@
+.loginhome {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Georgia, serif;
+}
+
+/* HERO */
+.lh-hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.lh-hero h1 {
+  color: #fff;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 10px rgba(0,0,0,.6);
+}
+
+/* FESTIVALS */
+.lh-festivals {
+  background: #fbf3e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.lh-festivals h2 {
+  font-size: 3rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 70px;
+}
+
+.festival-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.festival-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 85%;
+}
+
+.festival-card p {
+  margin-top: 10px;
+  
+}
+
+/* DISCOVER */
+.lh-discover {
+  background: #2f3545;
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.lh-discover h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.discover-list {
+  max-width: 900px;
+  margin: auto;
+}
+
+.discover-item {
+  display: grid;
+  grid-template-columns: 50px 1fr 120px;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgb(222, 217, 217);
+}
+
+.discover-item span {
+  font-size: 2rem;
+  opacity: .6;
+}
+
+.discover-item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.view-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .lh-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .festival-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discover-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .discover-item img {
+    max-width: 200px;
+  }
+}

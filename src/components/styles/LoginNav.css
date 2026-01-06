@@ -1,0 +1,141 @@
+/* ===============================
+   NAVBAR (DESKTOP)
+   =============================== */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(84, 173, 218);
+    padding: 6px 30px;
+    color: white;
+    position: relative; /* required for mobile menu */
+}
+
+/* ---------- USER ---------- */
+.user-box {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    margin-right: 8px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* ---------- LOGO ---------- */
+.logo {
+    width: 50%;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ---------- BUTTONS ---------- */
+.button-box {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-box button {
+    font-size: 12px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+.button-box button:hover {
+    background-color: rgb(50, 57, 55);
+}
+
+/* ===============================
+   HAMBURGER
+   =============================== */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+.name{
+    color: rgb(235, 234, 219);
+}
+
+/* ===============================
+   MOBILE VIEW
+   =============================== */
+
+@media (max-width: 768px) {
+
+    /* keep navbar row */
+    .navbar {
+        padding: 15px;
+    }
+
+    /* hide buttons initially */
+    .button-box {
+        position: absolute;
+        top: 65px;
+        right: 15px;
+        background-color: rgb(84, 173, 218);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+        border-radius: 10px;
+        width: 220px;
+        display: none;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        z-index: 99;
+    }
+.logo{
+    font-size: 11px;
+}
+    /* show menu when open */
+    .button-box.open {
+        display: flex;
+    }
+
+    .button-box button {
+        width: 100%;
+        margin: 6px 0;
+        padding: 12px;
+    }
+.name{
+    display: none;
+}
+    /* hamburger visible */
+    .hamburger {
+        display: flex;
+    }
+
+    /* adjust widths */
+    .user-box {
+        width: auto;
+    }
+
+    .logo {
+        width: auto;
+        flex: 1;
+    }
+}

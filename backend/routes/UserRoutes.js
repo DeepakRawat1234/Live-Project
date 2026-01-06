@@ -1,41 +1,81 @@
 import express from 'express';
 import User from '../models/User.js';
+import bcrypt from 'bcryptjs';
 
 const router = express.Router();
 
-// ================= Signup =================
+// ================= SIGNUP =================
 router.post('/signup', async (req, res) => {
-  const { name, email, password } = req.body;
-
   try {
-    const existingUser = await User.findOne({ email });
-    if (existingUser) 
-      return res.status(400).json({ message: 'User already exists' });
+    let { name, email, password } = req.body;
 
-    const newUser = new User({ name, email, password });
-    await newUser.save();  // Creates DB & collection automatically if not exists
+    if (!name || !email || !password) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+
+    // FORCE correct types
+    email = String(email).toLowerCase().trim();
+    password = String(password).trim();
+
+    if (password.length < 6) {
+      return res.status(400).json({ message: 'Password must be at least 6 characters' });
+    }
+
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: 'User already exists' });
+    }
+
+    const salt = await bcrypt.genSalt(12);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    const newUser = new User({
+      name,
+      email,
+      password: hashedPassword
+    });
+
+    await newUser.save();
 
     res.status(201).json({ message: 'User created successfully' });
+
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server error' });
   }
 });
 
-// ================= Login =================
+// ================= LOGIN =================
 router.post('/login', async (req, res) => {
-  const { email, password } = req.body;
-
   try {
+    let { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+
+    email = String(email).toLowerCase().trim();
+    password = String(password).trim();
+
     const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
 
-    if (!user) 
-      return res.status(400).json({ message: 'User not found' });
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
 
-    if (user.password !== password)  // For now plain text, later hash with bcrypt
-      return res.status(400).json({ message: 'Invalid password' });
+    res.status(200).json({
+      message: 'Login successful',
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email
+      }
+    });
 
-    res.status(200).json({ message: 'Login successful', user });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server error' });
