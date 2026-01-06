@@ -4,9 +4,14 @@ import india from "../../assets/Uploder/india.png"
 import  id from "../../assets/Uploder/id.png"
 import  dl from "../../assets/Uploder/dl.png"
 import  passport from "../../assets/Uploder/passport.png"
+import { useNavigate } from 'react-router-dom'
 
 
 const Idselect = () => {
+    const navigate=useNavigate();
+    const handleclick=()=>{
+        navigate("/file-upload")
+    }
   return (
     <div className='id-box'>
         <h2>Select ID type</h2>
@@ -53,7 +58,7 @@ const Idselect = () => {
         </div>
     </div>
 
-   </div>    <button className='cont-btn'>Continue</button>
+   </div>    <button className='cont-btn' onClick={handleclick}>Continue</button>
 </div>
  
    

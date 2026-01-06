@@ -22,7 +22,7 @@ const App = () => {
   return (
     <BrowserRouter>
    
-      {/* <Routes>
+      <Routes>
    
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -32,10 +32,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/postpage" element={<Postpage/>}></Route>
         <Route path='/loginhome' element={<UserHome/>}></Route>
-        
+        <Route path='/file-upload' element={<FileUpload/>}></Route>
+        <Route path='/idselect' element={<Idselect/>}></Route>
+        <Route path='/verification' element={<Verification/>}></Route>
       </Routes>
-      */}
-      <FileUpload/>
+     
+      
     </BrowserRouter>
   )
 }

@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "../styles/LoginNav.css";
 import user from "../../assets/User.png";
+import { useNavigate } from "react-router-dom";
 
 const LoginNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const Navigate =useNavigate()
+const handlieclick=()=>{
+  Navigate("/verification")
+}
   return (
     <div className="navbar">
 
@@ -30,7 +34,7 @@ const LoginNavbar = () => {
       {/* MENU */}
       <div className={`button-box ${menuOpen ? "open" : ""}`}>
         <button className="state">UTTARAKHAND</button>
-        <button>BECOME AN UPLODER</button>
+        <button onClick={handlieclick}>BECOME AN UPLODER</button>
       </div>
 
     </div>
