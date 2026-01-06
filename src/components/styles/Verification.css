@@ -1,0 +1,385 @@
+.verification-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(235, 243, 243, 0.642);
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+}
+.verification-h2{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.verification-p{
+    color: rgb(123, 123, 123);
+}
+.get-btn{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.get-btn:hover{
+    background-color: rgb(87, 87, 86);
+}
+ /* ID SELECT CSS */
+ .id-box{
+    width: 100%;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .id-box h2{
+    text-align: center;
+    margin-bottom: 60px;
+ }
+ .id-box label{
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    text-align: start;
+    font-size: 30px;
+ }
+ .id-box label h3{
+    text-align: start;
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ .country-box{
+width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 4px;
+
+ }.country-box img{
+    width: 40px;
+    margin-right: 20px;
+    height: auto;
+ }
+ .id-box select{
+    width: 80%;
+    outline: none;
+    padding: 20px 10px;
+    border: none;
+    
+ }
+.idtype{
+    width: 100%;
+    text-align: start;
+}
+.idtype .id-option{
+    display: flex;
+    margin-top: 40px;
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid gray;
+}
+.id-option img{
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.id-text{
+    width: 60%;
+}
+.id-option h5{
+    font-size: 20px;
+    width: 100%;
+}
+.id-option input{
+    margin-top: 20px;
+}
+.cont-btn{
+
+    background-color: black;
+    padding: 10px 90px;
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+    margin-top: 40px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+/* ===============================
+   LARGE SCREENS (≥1400px)
+   =============================== */
+@media (min-width: 1400px) {
+    .id-box {
+        padding: 60px 260px;
+    }
+
+    .country-box,
+    .idtype .id-option {
+        width: 45%;
+    }
+}
+
+/* ===============================
+   TABLET (≤1024px)
+   =============================== */
+@media (max-width: 1024px) {
+    .id-box {
+        padding: 40px 100px;
+    }
+
+    .country-box,
+    .idtype .id-option {
+        width: 70%;
+    }
+
+    .id-option img {
+        width: 60px;
+        margin-right: 25px;
+    }
+
+    .id-option h5 {
+        font-size: 18px;
+    }
+}
+
+/* ===============================
+   MOBILE (≤768px)
+   =============================== */
+@media (max-width: 768px) {
+    .id-box {
+        padding: 30px 20px;
+    }
+
+    .id-box h2 {
+        margin-bottom: 40px;
+        font-size: 22px;
+    }
+
+    .id-box label {
+        font-size: 20px;
+    }
+
+    .country-box {
+        width: 100%;
+    }
+
+    .id-box select {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .idtype .id-option {
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    .id-option img {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .id-text {
+        width: 70%;
+    }
+
+    .id-option h5 {
+        font-size: 16px;
+    }
+
+    .id-option input {
+        margin-top: 10px;
+    }
+
+    .cont-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+}
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+   =============================== */
+@media (max-width: 480px) {
+    .id-box h2 {
+        font-size: 20px;
+    }
+
+    .id-option img {
+        width: 45px;
+    }
+
+    .id-option h5 {
+        font-size: 15px;
+    }
+}
+
+ /* File Upload css */
+.file-box{
+    background-color: rgb(246, 247, 249);
+    padding: 80px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload-box{
+    display: flex;
+}
+.upload-h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.upload-box img{
+}
+.upload-h2{
+    color: gray;
+}
+
+.upload-box .fileimg-box img{
+    margin-top: 40px;
+    padding-left: 50px;
+    width: 200px;
+}
+
+.fileimg-box{
+    display: flex;
+    flex-direction: column;
+}
+.upload-btn{
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: rgb(183, 182, 182);
+    border: none;
+    margin-left: 20px;
+}
+
+.photo-input{
+    border: none;
+    margin-left: 20px;
+}
+.finish-btn{
+    background-color: rgb(12, 12, 196);
+    color: white;
+    padding: 15px 130px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+/* ===============================
+   LARGE SCREENS (≥1400px)
+   =============================== */
+@media (min-width: 1400px) {
+    .file-box {
+        padding: 100px 0;
+    }
+
+    .upload-box .fileimg-box img {
+        width: 230px;
+    }
+
+    .finish-btn {
+        padding: 16px 160px;
+    }
+}
+
+/* ===============================
+   TABLET (≤1024px)
+   =============================== */
+@media (max-width: 1024px) {
+    .file-box {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .upload-box {
+        gap: 20px;
+    }
+
+    .upload-box .fileimg-box img {
+        width: 180px;
+        padding-left: 20px;
+    }
+
+    .upload-btn {
+        width: 70%;
+    }
+
+    .finish-btn {
+        padding: 14px 110px;
+    }
+}
+
+/* ===============================
+   MOBILE (≤768px)
+   =============================== */
+@media (max-width: 768px) {
+    .file-box {
+        padding: 40px 15px;
+        height: auto;
+        text-align: center;
+    }
+
+    .upload-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upload-box .fileimg-box img {
+        width: 150px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .upload-btn,
+    .photo-input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .finish-btn {
+        width: 100%;
+        padding: 14px 0;
+        margin-top: 20px;
+        border-radius: 18px;
+    }
+}
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+   =============================== */
+@media (max-width: 480px) {
+    .upload-h3 {
+        font-size: 16px;
+    }
+
+    .upload-h2 {
+        font-size: 14px;
+    }
+
+    .upload-box .fileimg-box img {
+        width: 130px;
+    }
+}

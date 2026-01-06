@@ -1,0 +1,152 @@
+import React from "react";
+import "../styles/loginhome.css";
+
+import hero from "../../assets/home2/hero.jpg";
+import harla from "../../assets/home2/post-3.jpg";
+import phooldei from "../../assets/home2/phooldei.jpg";
+import ghee from "../../assets/home2/ghee.jpg";
+import nanda from "../../assets/home2/nanda.jpg";
+import pandav2 from "../../assets/Home2/pandav-2.jpg"
+import jagar from "../../assets/home2/jagar.jpg";
+import jhumaleo from "../../assets/Home2/jhumelo.jpg"
+import ganga from "../../assets/Home2/ganga.jpg"
+import pandav from "../../assets/home2/pandav.jpg";
+import choliya from "../../assets/home2/choliya.jpg";
+import naula from "../../assets/home2/naula.jpg";
+import { useNavigate } from "react-router-dom";
+
+export default function LoginHome() {
+    const navigate=useNavigate();
+    const handleclick=()=>{
+        navigate("/postpage")
+    }
+  return (
+    <div className="loginhome">
+
+      {/* HERO */}
+      <section
+        className="lh-hero"
+        style={{ backgroundImage: `url(${hero})` }}
+      >
+        <h1>UTTARAKHAND</h1>
+      </section>
+
+      {/* LATEST FESTIVALS */}
+      <section className="lh-festivals">
+        <h2>Latest Festivals</h2>
+
+        <div className="festival-grid">
+          <div className="festival-card" onClick={handleclick}>
+            <img src={harla} alt="Harla Festival" />
+            <p>Harla Festival</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={phooldei} alt="Phool Dei" />
+            <p>Phool Dei</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={ghee} alt="Ghee Sankranti" />
+            <p>Ghee Sankranti</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={nanda} alt="Nanda Devi Raj Jat" />
+            <p>Nanda Devi Raj Jat Yatra</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={ganga} alt="Ganga Aarti" />
+            <p>Ganga Aarti</p>
+          </div>
+           <div className="festival-card" onClick={handleclick}>
+            <img src={jhumaleo} alt="jhumaleo" />
+            <p>jhumaleo - Dance</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={pandav2} alt="pandav" />
+            <p>Pandav - Dance</p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={choliya} alt="choliya" />
+            <p>Choliya - Dance </p>
+          </div>
+          <div className="festival-card" onClick={handleclick}>
+            <img src={phooldei} alt="choliya" />
+            <p>Bashant Punchmi Festival </p>
+          </div>
+           <div className="festival-card" onClick={handleclick}>
+            <img src={harla} alt="Harla Festival" />
+            <p>Harla Festival</p>
+          </div>
+          <div className="festival-card">
+            <img src={phooldei} alt="Phool Dei" />
+            <p>Phool Dei</p>
+          </div>
+          <div className="festival-card">
+            <img src={ghee} alt="Ghee Sankranti" />
+            <p>Ghee Sankranti</p>
+          </div>
+          <div className="festival-card">
+            <img src={ghee} alt="Ghee Sankranti" />
+            <p>Ghee Sankranti</p>
+          </div>
+          <div className="festival-card">
+            <img src={nanda} alt="Nanda Devi Raj Jat" />
+            <p>Nanda Devi Raj Jat Yatra</p>
+          </div>
+          <div className="festival-card">
+            <img src={ghee} alt="Ghee Sankranti" />
+            <p>Ghee Sankranti</p>
+          </div>
+        </div>
+      </section>
+
+      {/* DISCOVER MORE */}
+      <section className="lh-discover">
+        <h2>
+          DISCOVER MORE <br /> CULTURES
+        </h2>
+
+        <div className="discover-list">
+          <div className="discover-item">
+            <span>01</span>
+            <div>
+              <h4>Jagar – Spirit Calling Ritual</h4>
+              <p>Ancient ritual invoking local deities through music.</p>
+            </div>
+            <img src={jagar} alt="Jagar Ritual" />
+          </div>
+
+          <div className="discover-item">
+            <span>02</span>
+            <div>
+              <h4>Pandav Nritya</h4>
+              <p>Dance tradition inspired by Mahabharata legends.</p>
+            </div>
+            <img src={pandav} alt="Pandav Nritya" />
+          </div>
+
+          <div className="discover-item">
+            <span>03</span>
+            <div>
+              <h4>Choliya (Sword Dance)</h4>
+              <p>War dance symbolising bravery and heritage.</p>
+            </div>
+            <img src={choliya} alt="Choliya Dance" />
+          </div>
+
+          <div className="discover-item">
+            <span>04</span>
+            <div>
+              <h4>Nanda Devi Worship</h4>
+              <p>Sacred rituals dedicated to Goddess Nanda.</p>
+            </div>
+            <img src={naula} alt="Naula" />
+          </div>
+
+        </div>
+
+        <button className="view-btn">VIEW ALL POSTS</button>
+      </section>
+
+    </div>
+  );
+}

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate=useNavigate()
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -23,7 +24,7 @@ const Login = () => {
 
       if (res.status === 200) {
         setMessage('Login successful!');
-        console.log(data.user); // You can store in context or localStorage
+        navigate("/loginhome")
       } else {
         setMessage(data.message);
       }

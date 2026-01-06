@@ -8,7 +8,7 @@ import Footer from '../components/Layout/Footer'
 const Gallery = () => {
   return (
     <div >
-        <Navbar/>
+      <Navbar/>
         <GalleryHero/>
         <Gallerypost/>
         <GallerySlider/>
