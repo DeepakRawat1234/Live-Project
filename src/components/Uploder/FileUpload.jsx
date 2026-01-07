@@ -1,7 +1,12 @@
 import React from 'react'
 import computer from "../../assets/Uploder/computer.png"
 import file from '../../assets/Uploder/file.png'
+import { useNavigate } from 'react-router-dom'
 const FileUpload = () => {
+  const navigate=useNavigate();
+  const handleclick=()=>{
+    navigate("/loginhome")
+  }
   return (
     <div className='file-box'>
         <div className='upload-box'>
@@ -11,7 +16,7 @@ const FileUpload = () => {
             <div className='fileimg-box'><img src={file} alt="" /><button className='upload-btn'>UPLOAD PHOTO</button>
             <input type="file" className='photo-input' placeholder='UPLOAD PHOTO'/> 
             </div>
-            <button className='finish-btn'>FINISH</button>
+            <button className='finish-btn' onClick={handleclick}>FINISH</button>
             </div>
         </div>
     </div>

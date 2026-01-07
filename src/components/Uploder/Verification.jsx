@@ -1,13 +1,19 @@
 import React from 'react'
 import img1 from "../../assets/Uploder/img-1.png"
 import '../styles/Verification.css'
+import { useNavigate } from 'react-router-dom'
 const Verification = () => {
+  const navigate=useNavigate();
+   const handlieclick=()=>{
+    navigate("/idselect")
+   }
   return (
+   
     <div className='verification-box'>
         <img src={img1} alt="" />
         <h2 className='verification-h2'>Identity Verification</h2>
         <p className='verification-p'>Complete identity verification to start Uploading</p>
-        <button className='get-btn'>Get Started  </button>
+        <button className='get-btn' onClick={handlieclick}>Get Started  </button>
     </div>
   )
 }
