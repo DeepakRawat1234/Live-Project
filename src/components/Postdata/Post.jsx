@@ -59,7 +59,23 @@ export const Post = () => {
           <div><img src={post3} alt="" /></div>
         </div>
        </div>
-
+<div className='post-videos'>
+  <h1>VIDEOS OF HARELA</h1>
+  <div className="video-grid">
+    <div className="video-box">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/G_JmZL4Z2o0?si=PpLkvyyxd65eZ3uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div className="video-box">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/hGSCzWk_04w?si=Fg_eiXWJvZXXswbG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div className="video-box">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/krDmsqg56Lk?si=XiQDC-WrjN3laxD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div className="video-box">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hiJ2GDZ8xwg?si=Nn3JbDzfKyMiN1ol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
        <div className='Discover'>
         <h1>DISCOVER MORE <br />CULTURES</h1>
         <div className="box">
@@ -98,6 +114,8 @@ export const Post = () => {
           </div>
           
         </div>
+        
+
         <h4 className='post-view'>VIEW ALL POSTS</h4>
        </div>
     </div>

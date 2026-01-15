@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <div className="Navbar">
         <h3 className="Logo-text">
-          <Link to="/" style={{textDecoration:"none"}}>Lockvani</Link>
+          <Link to="/" style={{textDecoration:"none"}}>Lokvani</Link>
         </h3>
 
         <ul className="Nav-link">
