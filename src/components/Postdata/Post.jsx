@@ -51,12 +51,12 @@ export const Post = () => {
        <div className='post-image'>
         <h1 >GLIMPES OF HARELA</h1>
         <div className="post-box">
-          <div><img src={post1} alt="" /></div>
-          <div><img src={post2} alt="" /></div>
-          <div><img src={post6} alt="" /></div>
-          <div><img src={post4} alt="" /></div>
-          <div><img src={post3} alt="" /></div>
-          <div><img src={post3} alt="" /></div>
+          <div><img src="src/assets/Post/post-1.avif" alt="" /></div>
+          <div><img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Post/post-2.jpg?raw=true" alt="" /></div>
+          <div><img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Post/bg.jpeg?raw=true" alt="" /></div>
+          <div><img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Post/post-4.webp?raw=true" alt="" /></div>
+          <div><img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Post/post-3.jpg?raw=true" alt="" /></div>
+          <div><img src=" https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Post/post-3.jpg?raw=true" alt="" /></div>
         </div>
        </div>
 <div className='post-videos'>
@@ -86,7 +86,7 @@ export const Post = () => {
              quis eaque cupiditate incidunt doloribus tempora eos nisi sit. Excepturi eius est ipsa deleniti voluptatem reprehenderit nesciunt.</p>
           </div>
           <div>
-            <img src={post1} alt="" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/pandav.jpg?raw=true" alt="" />
           </div>
           
         </div>
@@ -98,7 +98,7 @@ export const Post = () => {
              quis eaque cupiditate incidunt doloribus tempora eos nisi sit. Excepturi eius est ipsa deleniti voluptatem reprehenderit nesciunt.</p>
           </div>
           <div>
-            <img src={post2} alt="" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/harla.jpg?raw=true" alt="" />
           </div>
           
         </div>

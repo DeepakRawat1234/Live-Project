@@ -26,25 +26,25 @@ export default function GallerySection() {
 
       <div className="gallery">
         <div className="card">
-          <img src={img4} alt="Bikaner Camel Festival" />
+          <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home/img4.jpg?raw=true" alt="Bikaner Camel Festival" />
+          <h3>Bikaner </h3>
+          <a href="" className="btn"><Link to="/gallery" style={{color:"white",textDecoration:"none"}}>Visit</Link></a>
+        </div>
+
+        <div className="card">
+          <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home/img1.jpg?raw=true" alt="Bikaner Camel Festival" />
           <h3>Bikaner Camel</h3>
           <a href="" className="btn"><Link to="/gallery" style={{color:"white",textDecoration:"none"}}>Visit</Link></a>
         </div>
 
         <div className="card">
-          <img src={img1} alt="Bikaner Camel Festival" />
-          <h3>Bikaner Camel</h3>
-          <a href="" className="btn"><Link to="/gallery" style={{color:"white",textDecoration:"none"}}>Visit</Link></a>
-        </div>
-
-        <div className="card">
-          <img src={img2} alt="Bikaner Camel Festival" />
+          <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home/img2.jpg?raw=true" alt="Bikaner Camel Festival" />
           <h3>Bikaner Camel</h3>
           <a href="#" className="btn"><Link to="/gallery" style={{color:"white",textDecoration:"none"}}>Visit</Link></a>
         </div>
 
         <div className="card">
-          <img src={img3} alt="Bikaner Camel Festival" />
+          <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home/img3.jpg?raw=true" alt="Bikaner Camel Festival" />
           <h3>Bikaner Camel</h3>
           <a href="#" className="btn"><Link to="/gallery" style={{color:"white",textDecoration:"none"}}>Visit</Link></a>
         </div>
