@@ -76,7 +76,7 @@
     font-size: 50px;
     color: rgb(3, 3, 61);
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@
     font-size: 35px;
     color: rgb(3, 3, 61);
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
 }
 
@@ -248,4 +248,52 @@
     .post-box { grid-template-columns: 1fr; gap: 20px; }
     .Discover .box { flex-direction: column; align-items: center; }
     .Discover .box div { text-align: center; max-width: 100%; }
+}
+
+
+.post-videos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.post-videos h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 videos per row */
+  gap: 20px;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr; /* still 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
 }
