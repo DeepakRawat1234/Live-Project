@@ -37,63 +37,63 @@ export default function LoginHome() {
 
         <div className="festival-grid">
           <div className="festival-card" onClick={handleclick}>
-            <img src={harla} alt="Harla Festival" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/harla.jpg?raw=true" alt="Harla Festival" />
             <p>Harla Festival</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={phooldei} alt="Phool Dei" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/phooldei.jpg?raw=true" alt="Phool Dei" />
             <p>Phool Dei</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={ghee} alt="Ghee Sankranti" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/ghee.jpg?raw=true" alt="Ghee Sankranti" />
             <p>Ghee Sankranti</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={nanda} alt="Nanda Devi Raj Jat" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/nanda.jpg?raw=true" alt="Nanda Devi Raj Jat" />
             <p>Nanda Devi Raj Jat Yatra</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={ganga} alt="Ganga Aarti" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/ganga.jpg?raw=true" alt="Ganga Aarti" />
             <p>Ganga Aarti</p>
           </div>
            <div className="festival-card" onClick={handleclick}>
-            <img src={jhumaleo} alt="jhumaleo" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/jhumelo.jpg?raw=true" alt="jhumaleo" />
             <p>jhumaleo - Dance</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={pandav2} alt="pandav" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/pandav-2.jpg?raw=true" alt="pandav" />
             <p>Pandav - Dance</p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={choliya} alt="choliya" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/choliya.jpg?raw=true" alt="choliya" />
             <p>Choliya - Dance </p>
           </div>
           <div className="festival-card" onClick={handleclick}>
-            <img src={phooldei} alt="choliya" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/phooldei.jpg?raw=true" alt="choliya" />
             <p>Bashant Punchmi Festival </p>
           </div>
            <div className="festival-card" onClick={handleclick}>
-            <img src={harla} alt="Harla Festival" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/harla.jpg?raw=true" alt="Harla Festival" />
             <p>Harla Festival</p>
           </div>
           <div className="festival-card">
-            <img src={phooldei} alt="Phool Dei" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/phooldei.jpg?raw=true" alt="Phool Dei" />
             <p>Phool Dei</p>
           </div>
           <div className="festival-card">
-            <img src={ghee} alt="Ghee Sankranti" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/ghee.jpg?raw=true" alt="Ghee Sankranti" />
             <p>Ghee Sankranti</p>
           </div>
           <div className="festival-card">
-            <img src={ghee} alt="Ghee Sankranti" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/ghee.jpg?raw=true" alt="Ghee Sankranti" />
             <p>Ghee Sankranti</p>
           </div>
           <div className="festival-card">
-            <img src={nanda} alt="Nanda Devi Raj Jat" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/nanda.jpg?raw=true" alt="Nanda Devi Raj Jat" />
             <p>Nanda Devi Raj Jat Yatra</p>
           </div>
           <div className="festival-card">
-            <img src={ghee} alt="Ghee Sankranti" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/ghee.jpg?raw=true" alt="Ghee Sankranti" />
             <p>Ghee Sankranti</p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function LoginHome() {
               <h4>Jagar – Spirit Calling Ritual</h4>
               <p>Ancient ritual invoking local deities through music.</p>
             </div>
-            <img src={jagar} alt="Jagar Ritual" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/jagar.jpg?raw=true" alt="Jagar Ritual" />
           </div>
 
           <div className="discover-item">
@@ -121,7 +121,7 @@ export default function LoginHome() {
               <h4>Pandav Nritya</h4>
               <p>Dance tradition inspired by Mahabharata legends.</p>
             </div>
-            <img src={pandav} alt="Pandav Nritya" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/pandav.jpg?raw=true" alt="Pandav Nritya" />
           </div>
 
           <div className="discover-item">
@@ -130,7 +130,7 @@ export default function LoginHome() {
               <h4>Choliya (Sword Dance)</h4>
               <p>War dance symbolising bravery and heritage.</p>
             </div>
-            <img src={choliya} alt="Choliya Dance" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/choliya.jpg?raw=true" alt="Choliya Dance" />
           </div>
 
           <div className="discover-item">
@@ -139,7 +139,7 @@ export default function LoginHome() {
               <h4>Nanda Devi Worship</h4>
               <p>Sacred rituals dedicated to Goddess Nanda.</p>
             </div>
-            <img src={naula} alt="Naula" />
+            <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Home2/naula.jpg?raw=true" alt="Naula" />
           </div>
 
         </div>

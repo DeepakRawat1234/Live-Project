@@ -64,7 +64,7 @@ export default function InformationAbout() {
       <div className="info-box scroll-fade">
         <div className="info-image-container">
           <img
-            src="/src/assets/informationimg/risikesh.jpg"
+            src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/Informationimg/risikesh.jpg?raw=true"
             alt="Rishikesh Culture"
             className="info-image"
           />

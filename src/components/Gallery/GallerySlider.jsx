@@ -24,10 +24,10 @@ const GallerySlider = () => {
 <h6>Cultural Glimpses</h6>
 <h1>Uncover India’s cultural charm and identity.</h1>
 <div className='imgdiv'>
-    <img src={img1} alt="" />
-    <img src={img2} alt="" />
-    <img src={img3} alt="" />
-    <img src={img4} alt="" />
+    <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/sliderlogo-1.png?raw=true" alt="" />
+    <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/sliderlogo-2.png?raw=true" alt="" />
+    <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/sliderlogo-3.png?raw=true" alt="" />
+    <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/sliderlogo-4.png?raw=true" alt="" />
 </div>
 <div className="imgdiv slider-imgdiv">
         <button className="prev" onClick={prevSlide}>
@@ -42,7 +42,7 @@ const GallerySlider = () => {
             className={index === current ? "slide active" : "slide"}
             key={index}
           >
-            {index === current && <img src={img} alt={`slide-${index}`} />}
+            {index === current && <img src="https://github.com/DeepakRawat1234/Live-Project/blob/main/src/assets/sliderimg-1.jpg?raw=true" alt={`slide-${index}`} />}
           </div>
         ))}
       </div>
