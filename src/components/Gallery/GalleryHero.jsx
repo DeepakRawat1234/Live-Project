@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Gallery.css"
-import bgimg from "../../assets/galler-bg.jpg"; // your hero image
+import bgimg from "../../assets/galler-bg.jpg"; //  hero image
 
 const GalleryHero = () => {
   return (

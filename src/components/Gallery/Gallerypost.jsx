@@ -1,11 +1,6 @@
 import React from 'react'
 import Postbox from './Postbox'
-import post_1 from '../../assets/post-1.png'
-import post_2 from '../../assets/post-2.png'
-import post_3 from '../../assets/post-3.png'
-import post_4 from '../../assets/post-4.png'
-import post_5 from '../../assets/post-5.png'
-import post_6 from '../../assets/post-6.png'
+
 import '../styles/Gallery.css'
 const Gallerypost = () => {
   return (

@@ -2,17 +2,7 @@ import React from "react";
 import "../styles/loginhome.css";
 
 import hero from "../../assets/home2/hero.jpg";
-import harla from "../../assets/home2/post-3.jpg";
-import phooldei from "../../assets/home2/phooldei.jpg";
-import ghee from "../../assets/home2/ghee.jpg";
-import nanda from "../../assets/home2/nanda.jpg";
-import pandav2 from "../../assets/Home2/pandav-2.jpg"
-import jagar from "../../assets/home2/jagar.jpg";
-import jhumaleo from "../../assets/Home2/jhumelo.jpg"
-import ganga from "../../assets/Home2/ganga.jpg"
-import pandav from "../../assets/home2/pandav.jpg";
-import choliya from "../../assets/home2/choliya.jpg";
-import naula from "../../assets/home2/naula.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 export default function LoginHome() {

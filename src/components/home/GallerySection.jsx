@@ -1,21 +1,12 @@
 import React from "react";
 import "../styles/GallerySection.css";
 
-import img1 from "../../assets/Home/img1.jpg";
-import img2 from "../../assets/Home/img2.jpg";
-import img3 from "../../assets/Home/img3.jpg";
-import img4 from "../../assets/Home/img4.jpg";
-import img5 from "../../assets/Home/img5.jpg";
+
 import { Link } from "react-router-dom";
 
 
 export default function GallerySection() {
-  const items = [
-    { img: img1, title: "Bikaner Camel Festival" },
-    { img: img2, title: "Hemis Festival" },
-    { img: img3, title: "Kerala Village Fair (Gramam)" },
-    { img: img4, title: "Goa Carnival" },
-  ];
+ 
 
   return (
     <div className="main">

@@ -24,12 +24,12 @@ const App = () => {
    
       { <Routes>
    
-          {/* <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/information" element={<Information />} />
           <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/post" element={<Postpage />} /> */}
-        <Route path="/" element={<LoginHome />} />
+          <Route path="/post" element={<Postpage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/postpage" element={<Postpage/>}></Route>
         <Route path='/loginhome' element={<UserHome/>}></Route>
         <Route path='/file-upload' element={<FileUpload/>}></Route>

@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
-// import img1 from "../../assets/sliderlogo-1.png"
-// import img2 from "../../assets/sliderlogo-2.png"
-// import img3 from "../../assets/sliderlogo-3.png"
-// import img4 from "../../assets/sliderlogo-4.png"
-// import sliderimg1 from '../../assets/sliderimg-1.jpg'
-// import sliderimg2 from '../../assets/sliderimg-2.jpg'
-// import sliderimg3 from '../../assets/sliderimg-3.jpg'
-// import sliderimg4 from '../../assets/sliderimg-4.jpg'
+import sliderimg1 from '../../assets/sliderimg-1.jpg'
+import sliderimg2 from '../../assets/sliderimg-2.jpg'
+import sliderimg3 from '../../assets/sliderimg-3.jpg'
+import sliderimg4 from '../../assets/sliderimg-4.jpg'
 const GallerySlider = () => {
     const images = [sliderimg1,sliderimg2,sliderimg3,sliderimg4];
   const [current, setCurrent] = useState(0);
